@@ -26,7 +26,7 @@ window.addEventListener('scroll', () => {
     const currentScroll = Math.min(scrollPosition, maxScroll);
     const brightness = 1 - (currentScroll / maxScroll);
 
-    image.style.filter = `brightness(${brightness})`;
+    image.style.filter = brightness({brightness});
 });
 
 
